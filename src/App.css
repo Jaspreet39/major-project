@@ -1,0 +1,151 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 90vh;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    /* animation: App-logo-spin infinite 10000s linear; */
+  }
+}
+
+.App-header {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.ab{
+  margin-top: -60px;
+}
+.b{
+  margin-top: 6px;
+}
+.a{
+  margin-top: 15px;
+}
+.g{
+  
+  font-size: 30px !important;
+  color: rgb(16, 1, 23);
+  /* background-color:seagreen; */
+  
+}
+
+.g:hover{
+  font-size: 40px !important;
+  cursor:pointer;
+  transition: 0.5s;
+}
+.db{
+  font-size: 70px;
+  color: rgb(100, 36, 11);
+  background-color: darkcyan;
+  text-align: center;
+
+
+  background-image: url("https://cdn.pixabay.com/photo/2016/12/01/18/17/mobile-phone-1875813__340.jpghttps://cdn.pixabay.com/photo/2016/12/01/18/17/mobile-phone-1875813__340.jpg");
+}
+.fname{
+  size: 100px;
+}
+.uname{
+  size: 100px;
+}
+.ps{
+  size: 100px;
+}
+.scroll ul{
+  /* overflow:hidden; */
+  overflow-y: scroll;
+}
+.fname{
+  size: 100px;
+  
+}
+.ba{
+  font-style: var();
+  text-align: center;
+  background-image: url("https://www.bajajfinserv.in/Top_10_mobile_phones_under_Rs._15,000_IMG_BlogBanners_Phones-under-15K_790x345px.jpg");
+}
+.d{
+  font-style: italic;
+  font-size: larger;
+  background-color: chocolate;
+}
+
+.container{
+  /* text-align: center; */
+  
+}
+
+.top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul.navbar1 li {
+  display:inline;
+  text-decoration: none !important;
+  justify-content: space-between;
+  column-gap: 20px;
+  padding-right: 20px;
+}
+
+*{
+  /* margin-top: 20px; */
+  text-decoration: none !important;
+  margin-left: 5px;
+
+}
+
+.form-main{
+  border: 1px solid grey;
+  width: fit-content;
+  padding: 10px 50px ;
+  text-align: center;
+  align-content: center;
+  /* display: grid; */
+  margin: auto;
+  border-radius: 20px;
+}
+
+.form1{
+  padding: 5px 20px;
+  margin-top: 10px;
+  height: 20px;
+  border-radius: 0px;
+  border: 1px solid black;
+  outline: none;
+}
+
+.center{
+  text-align: center;
+}
+
+.bt{
+  padding: 5px 30px;   
+  margin-top: 15px;
+}

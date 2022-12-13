@@ -1,12 +1,16 @@
 import React from 'react'
+import BannerContainer from './Component/BannerContainer'
+import BottomBar from './Component/BottomBar'
+import Header from './Component/Header'
 // import Home from './home'
 
 export default function Page() {
   return (
     <>
-    
-      <h1 className='db'>Get Your Phone Price Instantly</h1>
 
+      <Header />
+      <div className='h-[65px] bg-white' />
+      <BannerContainer />
       <div class="container">
         <h2>Specifications:</h2>
         <p>We Provide Best Price in Just Few Minutes</p>
@@ -27,8 +31,7 @@ export default function Page() {
           </tbody>
         </table>
       </div>
-
-
+      <BottomBar />
     </>
 
   )

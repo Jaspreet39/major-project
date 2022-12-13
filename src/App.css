@@ -31,34 +31,39 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
-.ab{
+.ab {
   margin-top: -60px;
 }
-.b{
+
+.b {
   margin-top: 6px;
 }
-.a{
+
+.a {
   margin-top: 15px;
 }
-.g{
-  
+
+.g {
+
   font-size: 30px !important;
   color: rgb(16, 1, 23);
   /* background-color:seagreen; */
-  
+
 }
 
-.g:hover{
+.g:hover {
   font-size: 40px !important;
-  cursor:pointer;
+  cursor: pointer;
   transition: 0.5s;
 }
-.db{
+
+.db {
   font-size: 70px;
   color: rgb(100, 36, 11);
   background-color: darkcyan;
@@ -67,64 +72,70 @@
 
   background-image: url("https://cdn.pixabay.com/photo/2016/12/01/18/17/mobile-phone-1875813__340.jpghttps://cdn.pixabay.com/photo/2016/12/01/18/17/mobile-phone-1875813__340.jpg");
 }
-.fname{
+
+.fname {
   size: 100px;
 }
-.uname{
+
+.uname {
   size: 100px;
 }
-.ps{
+
+.ps {
   size: 100px;
 }
-.scroll ul{
+
+.scroll ul {
   /* overflow:hidden; */
   overflow-y: scroll;
 }
-.fname{
+
+.fname {
   size: 100px;
-  
+
 }
-.ba{
+
+.ba {
   font-style: var();
   text-align: center;
   background-image: url("https://www.bajajfinserv.in/Top_10_mobile_phones_under_Rs._15,000_IMG_BlogBanners_Phones-under-15K_790x345px.jpg");
 }
-.d{
+
+.d {
   font-style: italic;
   font-size: larger;
   background-color: chocolate;
 }
 
-.container{
+.container {
   /* text-align: center; */
-  
+
 }
 
-.top{
+.top {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 ul.navbar1 li {
-  display:inline;
+  display: inline;
   text-decoration: none !important;
   justify-content: space-between;
   column-gap: 20px;
   padding-right: 20px;
 }
 
-*{
+* {
   /* margin-top: 20px; */
   text-decoration: none !important;
-  margin-left: 5px;
 
 }
 
-.form-main{
+.form-main {
   border: 1px solid grey;
   width: fit-content;
-  padding: 10px 50px ;
+  padding: 10px 50px;
   text-align: center;
   align-content: center;
   /* display: grid; */
@@ -132,7 +143,7 @@ ul.navbar1 li {
   border-radius: 20px;
 }
 
-.form1{
+.form1 {
   padding: 5px 20px;
   margin-top: 10px;
   height: 20px;
@@ -141,11 +152,11 @@ ul.navbar1 li {
   outline: none;
 }
 
-.center{
+.center {
   text-align: center;
 }
 
-.bt{
-  padding: 5px 30px;   
+.bt {
+  padding: 5px 30px;
   margin-top: 15px;
 }

@@ -12,6 +12,7 @@ import Loginpage from "./loginpage";
 import Aboutus from "./about";
 import Login from "./pages/login";
 import ProductForm from "./pages/ProductForm";
+import Basket from "./Component/Basket";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/about" element={<Aboutus />} />
           <Route path="/proform" element={<ProductForm />} />
+          <Route path="/basket" element={<Basket />} />
         </Routes>
       </Router>
     </>

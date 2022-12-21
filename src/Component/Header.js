@@ -5,14 +5,14 @@ import { auth } from "../firebase";
 
 function Header() {
   const [user, setUser] = useState(false);
-  const [detail, setDetail] = useState('')
+  const [detail, setDetail] = useState("");
 
   useEffect(() => {
     auth.onAuthStateChanged((userAuth) => {
       console.log(userAuth);
       if (userAuth) {
         setUser(true);
-        setDetail(userAuth.email)
+        setDetail(userAuth.email);
       } else {
         setUser(false);
         console.log(user);
@@ -54,7 +54,12 @@ function Header() {
               ))}
             </select>
           )}
-          <h1 className="text-3xl cursor-pointer">Branches</h1>
+          <h1
+            onClick={() => navigate("/basket")}
+            className="text-3xl cursor-pointer"
+          >
+            Basket
+          </h1>
           <h1 className="text-3xl cursor-pointer">About-us</h1>
         </div>
         {!user ? (
@@ -65,15 +70,14 @@ function Header() {
             SignIn
           </h1>
         ) : (
-
-          <div onClick={() => auth.signOut().then(() => navigate('/login'))} className="flex items-end space-x-4  cursor-pointer">
-            <h1
-              className="text-4xl"
-
-            >
-              Logout
-            </h1>
-            <p className="text-4xl font-bold text-white px-4 py-2 rounded-full bg-black">{detail[0].toUpperCase()}</p>
+          <div
+            onClick={() => auth.signOut().then(() => navigate("/login"))}
+            className="flex items-end space-x-4  cursor-pointer"
+          >
+            <h1 className="text-4xl">Logout</h1>
+            <p className="text-4xl font-bold text-white px-4 py-2 rounded-full bg-black">
+              {detail[0].toUpperCase()}
+            </p>
           </div>
         )}
       </div>

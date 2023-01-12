@@ -70,13 +70,21 @@ function Header() {
             SignIn
           </h1>
         ) : (
-          <div
-            onClick={() => auth.signOut().then(() => navigate("/login"))}
-            className="flex items-end space-x-4  cursor-pointer"
-          >
-            <h1 className="text-4xl">Logout</h1>
-            <p className="text-4xl font-bold text-white px-4 py-2 rounded-full bg-black">
-              {detail[0].toUpperCase()}
+          <div className="flex items-center space-x-4 justify-center">
+            <div
+              onClick={() => auth.signOut().then(() => navigate("/login"))}
+              className="flex items-end space-x-4  cursor-pointer"
+            >
+              <h1 className="text-4xl">Logout</h1>
+              <p className="text-4xl font-bold text-white px-4 py-2 rounded-full bg-black">
+                {detail[0].toUpperCase()}
+              </p>
+            </div>
+            <p
+              onClick={() => navigate("/proform")}
+              className="text-white bg-black px-2 py-4 rounded-md cursor-pointer"
+            >
+              Add Product
             </p>
           </div>
         )}

@@ -54,113 +54,150 @@ function ProductForm() {
   };
 
   return (
-    <div className="">
-      <div>
-        <input
-          onChange={(e) => setName(e.target.value)}
-          type="text"
-          placeholder="Name"
-        />
+    <div className="h-[100vh] flex flex-col justify-center space-y-4 items-center">
+      <h1>add your product</h1>
+      <div className="bg-gradient-to-b from-sky-200 to-white w-[40%] mx-auto flex flex-col items-start justify-center space-y-4 px-3 py-4">
+        <div className="w-full ">
+          <input
+            className="min-w-[100%] outline-none px-2 py-2 rounded-md"
+            onChange={(e) => setName(e.target.value)}
+            type="text"
+            placeholder="Name"
+          />
+        </div>
+        <div className="w-full ">
+          <input
+            className="min-w-[100%] outline-none px-2 py-2 rounded-md"
+            onChange={(e) => setiphone(e.target.value)}
+            type="text"
+            placeholder="Iphone"
+          />
+        </div>
+        <div className="w-full ">
+          <input
+            className="min-w-[100%] outline-none px-2 py-2 rounded-md"
+            onChange={(e) => sethealth(e.target.value)}
+            type="text"
+            placeholder="health"
+          />
+        </div>
+        <div className="w-full ">
+          <select
+            className="min-w-[100%] outline-none px-2 py-2 rounded-md"
+            onChange={(e) => setbill(e.target.value)}
+          >
+            <option value="Yes">Bill</option>
+            <option value="Yes">Yes</option>
+            <option value="Yes">No</option>
+          </select>
+        </div>
+        <div className="w-full ">
+          <input
+            className="min-w-[100%] outline-none px-2 py-2 rounded-md"
+            onChange={(e) => setbox(e.target.value)}
+            type="text"
+            placeholder="Box"
+          />
+        </div>
+        <div className="w-full ">
+          <select
+            className="min-w-[100%] outline-none px-2 py-2 rounded-md"
+            onChange={(e) => setcharger(e.target.value)}
+          >
+            <option value="Yes">Charger</option>
+            <option value="Yes">Yes</option>
+            <option value="Yes">No</option>
+          </select>
+        </div>
+        <div className="w-full ">
+          <select
+            className="min-w-[100%] outline-none px-2 py-2 rounded-md"
+            onChange={(e) => setheasphone(e.target.value)}
+          >
+            <option value="Yes">Headphone</option>
+            <option value="Yes">Yes</option>
+            <option value="Yes">No</option>
+          </select>
+        </div>
+        <div className="w-full ">
+          <input
+            className="min-w-[100%] outline-none px-2 py-2 rounded-md"
+            onChange={(e) => setinternalmemory(e.target.value)}
+            type="text"
+            placeholder="Internal memory"
+          />
+        </div>
+        <div className="w-full ">
+          <input
+            className="min-w-[100%] outline-none px-2 py-2 rounded-md"
+            onChange={(e) => setram(e.target.value)}
+            type="text"
+            placeholder="RAM"
+          />
+        </div>
+        <div className="w-full ">
+          <select
+            className="min-w-[100%] outline-none px-2 py-2 rounded-md"
+            onChange={(e) => setsealed(e.target.value)}
+          >
+            <option value="Yes">Sealed</option>
+            <option value="Yes">Yes</option>
+            <option value="Yes">No</option>
+          </select>
+        </div>
+        <div className="w-full ">
+          <select
+            className="min-w-[100%] outline-none px-2 py-2 rounded-md"
+            onChange={(e) => setswapkit(e.target.value)}
+          >
+            <option value="Yes">Swap kit</option>
+            <option value="Yes">Yes</option>
+            <option value="Yes">No</option>
+          </select>
+        </div>
+        <div className="w-full ">
+          <select
+            className="min-w-[100%] outline-none px-2 py-2 rounded-md"
+            onChange={(e) => setrefurbished(e.target.value)}
+          >
+            <option value="Yes">Refurbished</option>
+            <option value="Yes">Yes</option>
+            <option value="Yes">No</option>
+          </select>
+        </div>
+        <div className="w-full ">
+          <select
+            className="min-w-[100%] outline-none px-2 py-2 rounded-md"
+            onChange={(e) => setsr(e.target.value)}
+          >
+            <option value="Yes">S.R</option>
+            <option value="Yes">Yes</option>
+            <option value="Yes">No</option>
+          </select>
+        </div>
+        <div className="w-full ">
+          <input
+            className="min-w-[100%] outline-none px-2 py-2 rounded-md"
+            onChange={(e) => setimage(e.target.files[0])}
+            type="file"
+            placeholder="Name"
+          />
+        </div>
+        <div className="w-full ">
+          <input
+            className="min-w-[100%] outline-none px-2 py-2 rounded-md"
+            onChange={(e) => settype(e.target.value)}
+            type="text"
+            placeholder="type"
+          />
+        </div>
+        <button
+          className="bg-blue-400 px-2 py-4 rounded-md min-w-[250px]"
+          onClick={submit}
+        >
+          submit
+        </button>
       </div>
-      <div>
-        <input
-          onChange={(e) => setiphone(e.target.value)}
-          type="text"
-          placeholder="Iphone"
-        />
-      </div>
-      <div>
-        <input
-          onChange={(e) => sethealth(e.target.value)}
-          type="text"
-          placeholder="health"
-        />
-      </div>
-      <div>
-        <select onChange={(e) => setbill(e.target.value)}>
-          <option value="Yes">Bill</option>
-          <option value="Yes">Yes</option>
-          <option value="Yes">No</option>
-        </select>
-      </div>
-      <div>
-        <input
-          onChange={(e) => setbox(e.target.value)}
-          type="text"
-          placeholder="Box"
-        />
-      </div>
-      <div>
-        <select onChange={(e) => setcharger(e.target.value)}>
-          <option value="Yes">Charger</option>
-          <option value="Yes">Yes</option>
-          <option value="Yes">No</option>
-        </select>
-      </div>
-      <div>
-        <select onChange={(e) => setheasphone(e.target.value)}>
-          <option value="Yes">Headphone</option>
-          <option value="Yes">Yes</option>
-          <option value="Yes">No</option>
-        </select>
-      </div>
-      <div>
-        <input
-          onChange={(e) => setinternalmemory(e.target.value)}
-          type="text"
-          placeholder="Internal memory"
-        />
-      </div>
-      <div>
-        <input
-          onChange={(e) => setram(e.target.value)}
-          type="text"
-          placeholder="RAM"
-        />
-      </div>
-      <div>
-        <select onChange={(e) => setsealed(e.target.value)}>
-          <option value="Yes">Sealed</option>
-          <option value="Yes">Yes</option>
-          <option value="Yes">No</option>
-        </select>
-      </div>
-      <div>
-        <select onChange={(e) => setswapkit(e.target.value)}>
-          <option value="Yes">Swap kit</option>
-          <option value="Yes">Yes</option>
-          <option value="Yes">No</option>
-        </select>
-      </div>
-      <div>
-        <select onChange={(e) => setrefurbished(e.target.value)}>
-          <option value="Yes">Refurbished</option>
-          <option value="Yes">Yes</option>
-          <option value="Yes">No</option>
-        </select>
-      </div>
-      <div>
-        <select onChange={(e) => setsr(e.target.value)}>
-          <option value="Yes">S.R</option>
-          <option value="Yes">Yes</option>
-          <option value="Yes">No</option>
-        </select>
-      </div>
-      <div>
-        <input
-          onChange={(e) => setimage(e.target.files[0])}
-          type="file"
-          placeholder="Name"
-        />
-      </div>
-      <div>
-        <input
-          onChange={(e) => settype(e.target.value)}
-          type="text"
-          placeholder="type"
-        />
-      </div>
-      <button onClick={submit}>submit</button>
     </div>
   );
 }
